@@ -4,10 +4,15 @@ import time
 # selenium 4
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
+# chrome driver manager: バージョンを自動的に合わせる
 from webdriver_manager.chrome import ChromeDriverManager
+# ChromeとChrome driverを開いたままにさせておく
+from selenium.webdriver.chrome.options import Options
+chrome_options = Options()
+chrome_options.add_experimental_option("detach", True)
 
 # 予約ページへアクセス
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 driver.get("https://ssc6.doctorqube.com/hana-fuku/")
 time.sleep(2)
 
