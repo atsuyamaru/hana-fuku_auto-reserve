@@ -66,5 +66,8 @@ first_time_reserve_btn = driver.find_element(by="xpath", value="//*[@id='yoyaku'
 time.sleep(2)
 first_time_reserve_btn.click()
 
+# 5分後にブラウザを終了させる
+time.sleep(300)
+driver.quit()
 
 
