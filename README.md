@@ -3,8 +3,13 @@
  新規予約では毎回、氏名やメールアドレスなどの個人情報の入力が必要となり、煩わしいために開発しました。
  
 ## Getting Started: 使い方
+ お使いの環境に下記の利用サードパーティライブラリをインストール。
  personal_info.jsonファイルのサンプルデータを、ご自身のデータに変更してからmain.pyをご利用ください。
  Python3.x系での利用を想定しています。
+ 
+## Required Libraries: 利用サードパーティライブラリ
+* Selenium
+* webdriver_manager
 
 ## Discraimer: 免責事項
 * サンプルデータのまま利用することは絶対におやめください。
@@ -14,3 +19,8 @@
 
 ## Recommendation: おすすめの利用方法
 MacおよびLinuxの場合、Cronを利用すると毎日0時に自動的にスクリプトを立ち上げることが可能です。
+下記の記事を参考にしてください。
+* [Pythonスクリプトをcronで定期実行させる｜こはた｜note](https://note.com/kohaku935/n/ne0957479c819)
+* [cronでPythonスクリプトを自動実行する | masayanblog](https://maasaablog.com/development/backend/python/737/)
+* [venv環境でpythonスクリプトをcronで周期実行 - Qiita](https://qiita.com/gao_gao/items/12a1e9620bddbff7463f)
+
