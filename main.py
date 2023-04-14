@@ -66,6 +66,20 @@ first_time_reserve_btn = driver.find_element(by="xpath", value="//*[@id='yoyaku'
 time.sleep(2)
 first_time_reserve_btn.click()
 
+# Click the reservation button at the most top of the menu
+try:
+    reserve_select_btn = driver.find_element(by="xpath", value="//*[@id='yoyaku']/div/div[2]/ul/div[1]/li/a")
+except:
+    time.sleep(10)
+    driver.quit()
+
+# Click the confirmation button
+try:
+     reserve_confirm_btn = driver.find_element(by="xpath", value="//*[@id='yoyaku']/div/div[2]/ul/div[2]/li/a")
+except:
+    time.sleep(10)
+    driver.quit()
+
 # 5分後にブラウザを終了させる
 time.sleep(300)
 driver.quit()
