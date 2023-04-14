@@ -73,12 +73,12 @@ except:
     time.sleep(10)
     driver.quit()
 
-# Click the confirmation button
-try:
-     reserve_confirm_btn = driver.find_element(by="xpath", value="//*[@id='yoyaku']/div/div[2]/ul/div[2]/li/a")
-except:
-    time.sleep(10)
-    driver.quit()
+# Click the confirmation button: 予約確認ボタンのクリックまで含めて自動化させたい場合はコメントを外してください
+#try:
+#     reserve_confirm_btn = driver.find_element(by="xpath", value="//*[@id='yoyaku']/div/div[2]/ul/div[2]/li/a")
+#except:
+#    time.sleep(10)
+#    driver.quit()
 
 # 5分後にブラウザを終了させる
 time.sleep(300)
