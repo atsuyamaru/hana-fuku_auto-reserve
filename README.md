@@ -12,6 +12,8 @@
 * Selenium
 * webdriver_manager
 
+参考: [webdriver_managerで自動的にSeleniumとChromeバージョンを一致させる](https://scr.marketing-wizard.biz/dev/webdriver-manager-selenium-chrome)
+
 ## Discraimer: 免責事項
 * サンプルデータのまま利用することは絶対におやめください。  
  （最悪の場合、威力業務妨害に問われる可能性もあります。その場合でも当方は責任をもてませんので、自己責任にてお願いいたします。）
