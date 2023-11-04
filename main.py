@@ -11,6 +11,12 @@ from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
 chrome_options.add_experimental_option("detach", True)
 
+# 個人情報を読み込む
+# Open the JSON file
+with open('personal_info.json') as f:
+    personal_info = json.load(f)
+
+
 # 予約ページへアクセス
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 driver.get("https://ssc6.doctorqube.com/hana-fuku/")
